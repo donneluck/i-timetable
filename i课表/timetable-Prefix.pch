@@ -1,0 +1,24 @@
+//
+// Prefix header for all source files of the 'CurriSchedule' target in the 'CurriSchedule' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "AFNetworking.h"
+    #import "NetworkClient.h"
+    #import "NSDictionary+Course.h"
+    #import "Data.h"
+//    #import "SCSQLite.h" //deprecate in v0.6
+    #import "MBProgressHUD.h"
+#import "SIAlertView.h"
+//#define _BaseURLString @"http://localhost:8080/ics/app"
+#define _BaseURLString @"http://shuangtixi.vicp.co:8081/ytc/app"
+//#define _BaseURLString @"http://http://192.168.2.1:8080/ics/app"
+#endif
